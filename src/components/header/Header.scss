@@ -1,14 +1,23 @@
 .header {
   display: flex;
-  align-items: center;
+  justify-content: space-between;
   border-bottom: 1px solid #ccc;
+  background-color: white;
+  min-height: 60px;
+  &__left {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
 }
 
 .candidate, .time-remaining {
-  padding: 0.5rem;
+  padding: 1em;
 }
 
 .theme-toggle {
-  padding: 0.25em;
-  margin: 0.5em;
+  cursor: pointer;
+  border: none;
+  padding: 1em;
+  min-width: 115px;
 }
